@@ -1,0 +1,115 @@
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+* {
+  font-family: 'Play', sans-serif;
+}
+body {
+  box-sizing: border-box;
+  background-image: url(../img/bumi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  margin-right: 10px;
+  width: 20%;
+}
+.active {
+  color: red !important;
+  border-left: 5px solid white !important;
+  padding-left: 15px;
+}
+
+/* container 1 */
+.container1 {
+  width: 300px;
+  float: left;
+  margin: 50px 0 0 30px;
+}
+.container1 button {
+  display: block;
+  font-size: 44px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  margin-top: 30px;
+  transition: padding 0.6s;
+}
+
+.container1 button:hover {
+  border-left: 5px solid white;
+  padding-left: 50px;
+}
+
+/* conatainer 2 */
+.content {
+  background-color: rgba(0, 0, 0, 0.404);
+  padding: 2px 30px;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  height: 600px;
+  width: 1100px;
+}
+.container2 .content ul li {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+.container2 {
+  float: left;
+  color: white;
+  margin: 50px 0 0 30px;
+}
+.container2 #home {
+  text-align: center;
+}
+.container2 h1 {
+  font-size: 44px;
+}
+.container2 #home p {
+  font-size: 24px;
+}
+.container2 #about .image {
+  width: 400px;
+  height: 500px;
+  margin: 40px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid rgba(0, 0, 0, 0);
+  outline: 3px solid white;
+}
+.container2 #about .image img {
+  margin-top: -30px;
+}
+.container2 #about .detail {
+  float: left;
+  padding-right: 100px;
+  font-size: 24px;
+}
+.container2 #about .detail #facebook {
+  border: 1px solid white;
+}
+.container2 #about .detail #facebook:hover {
+  background-color: blue;
+  box-shadow: 0 0 10px 2px blue;
+  border: 1px solid blue;
+}
+.container2 #about .detail #instagram {
+  border: 1px solid white;
+}
+.container2 #about .detail #instagram:hover {
+  background-color:blueviolet;
+  box-shadow: 0 0 10px 1px blueviolet;
+  border: 1px solid blueviolet;
+}
+.container2 #experience ul li {
+  font-size: 20px;
+}
+
