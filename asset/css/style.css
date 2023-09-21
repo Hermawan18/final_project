@@ -5,9 +5,9 @@
 }
 * {
   font-family: 'Play', sans-serif;
+  box-sizing: border-box;
 }
 body {
-  box-sizing: border-box;
   background-image: url(../img/bumi.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,7 +20,7 @@ a {
   color: white;
   padding: 20px;
   margin-right: 10px;
-  width: 20%;
+  width: 65px;
 }
 .active {
   color: red !important;
@@ -67,24 +67,29 @@ a {
   color: white;
   margin: 50px 0 0 30px;
 }
+
+/* Home */
 .container2 #home {
   text-align: center;
 }
 .container2 h1 {
+  margin: 10px 0;
   font-size: 44px;
 }
 .container2 #home p {
   font-size: 24px;
 }
-.container2 #about .image {
-  width: 400px;
-  height: 500px;
-  margin: 40px 0;
+.container2 #home .image {
+  width: 200px;
+  height: 300px;
+  margin: 20px auto;
   border-radius: 10px;
   overflow: hidden;
   border: 3px solid rgba(0, 0, 0, 0);
   outline: 3px solid white;
 }
+
+/* About */
 .container2 #about .image img {
   margin-top: -30px;
 }
@@ -109,7 +114,96 @@ a {
   box-shadow: 0 0 10px 1px blueviolet;
   border: 1px solid blueviolet;
 }
+.container2 #about .detail #linkedin {
+  border: 1px solid white;
+}
+.container2 #about .detail #linkedin:hover {
+  background-color:rgb(51, 65, 255);
+  box-shadow: 0 0 10px 1px rgb(51, 65, 255);
+  border: 1px solid rgb(51, 65, 255);
+}
+.container2 #about .detail #github {
+  border: 1px solid white;
+}
+.container2 #about .detail #github:hover {
+  background-color:white;
+  box-shadow: 0 0 10px 1px white;
+  border: 1px solid white;
+  color: black;
+}
+#facebook, #instagram, #linkedin, #github {
+  position: relative;
+  top: 110px;
+}
+
+/* Experience */
 .container2 #experience ul li {
   font-size: 20px;
 }
 
+/* Education */
+.container2 #education ul li {
+  display: block;
+  box-sizing: border-box;
+  background-color: rgb(110, 110, 110);
+  border-radius: 10px;
+  width: 500px;
+  padding: 20px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+/* Skills */
+.container2 #skills .skill {
+  background-color: grey;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px 10px;
+  float: left;
+}
+.container2 #skills .skill p {
+  display: block;
+}
+.container2 #skills .skill .bar {
+  background-color: whitesmoke;
+  width: 300px;
+  height: 20px;
+  border-radius: 10px;
+}
+.container2 #skills .skill .bar .slide-bar {
+  background-color: red;
+  width: 300px;
+  height: 20px;
+  border-radius: 10px;
+}
+.container2 #skills .skill .bar #leadership {
+  width: 210px;
+}
+.container2 #skills .skill .bar #marketing {
+  width: 250px;
+}
+.container2 #skills .skill .bar #teamwork {
+  width: 230px;
+}
+
+/* Interests */
+.container2 #interests ul li {
+  float: left;
+  display: block;
+  width: 300px;
+  padding: 20px;
+  margin: 20px 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: grey;
+}
+/* footer */
+footer {
+  position: absolute;
+  bottom: 15px;
+  left: 42%;
+  margin: auto;
+  float: left;
+  font-size: 18px;
+  color: white;
+}
